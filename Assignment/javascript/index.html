@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <!-- //style -->
+    <!-- scrpt -->
+</head>
+<body>
+    <p id="demo">TypeScript: reactNative (mobile application), frameworks: angular, reactNative, ReactJS</p>
+    <p id="deed"> TypeScript: reactNative (mobile application)</p>
+    <p>Ecma script</p>
+    <a href="https://agbenigaambali.olalinktech.com" target="_blank" onclick="return confirm('Are you sure you want to go that URL?')">My profile</a>
+<li class="thesameElement">aaddidid</li>
+<li class="thesameElement">aaddidid</li>
+<!-- <li class="thesameElement">aaddidid</li> -->
+<li class="thesameElement">aaddidid</li>
+<li class="thesameElement">aaddidid</li>
+<li class="thesameElement">aaddidid</li>
+
+<input type="text" id="name" placeholder="Input your name">
+<input type="email" id="email" placeholder="Input your email">
+<!-- <label for=""></label> -->
+<input type="text" id="phoneNumber" onkeyup="displaySomething()" placeholder="Input your phone number">
+<!-- let's quickly look at event listeners -->
+<button >Show</button>
+
+<p id="answer"></p>
+<p id="fetchName">Mr. Sada is a farmer</p>
+<p id="showName"></p>
+<!-- <li class="thesameElement">Javascript majorly for frontened. However can be used for backend but JAVA is mainly for backend</li> -->
+
+    <script>
+        // outputing data
+        document.getElementById("demo").innerHTML = "Hello world";
+        document.getElementById("deed").innerHTML = "First Java DEED";
+        document.write("asodod")
+        console.log("hello world, this is working as expected");
+        var a =10;
+        var b =120393;
+       var c =a *b;
+        // window.alert(c)
+        document.getElementById("answer").innerHTML = c;
+     //   window.alert("We are getting JS very well")
+        // confirm("Are you ready for this?")
+
+        //getting an input from a browser
+        const name = document.getElementById("fetchName").innerHTML;
+        document.getElementById("showName").innerHTML = name;
+
+        //event listener
+        function displaySomething(){
+            //get values that user just supplied
+            var name =document.getElementById("name").value
+            var email =document.getElementById("email").value
+            var phoneNumber =document.getElementById("phoneNumber").value
+            //output values that user just input
+            //let's quickly concatenate
+            var combineAll = name + ' ' + email + ' '+ phoneNumber;
+            // document.write(combineAll)
+            document.getElementById("answer").innerHTML = combineAll;
+
+
+            // alert('hello it works')
+        }
+
+        //common event listeners
+        //onclick
+        //onkeyup
+        //onkeydown
+        //onchange
+        //oninput
+        //onkeypress
+        //onmouseover
+        //onscroll
+        // /onplay
+        
+
+    </script>
+</body>
+</html>
